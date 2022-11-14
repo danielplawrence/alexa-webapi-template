@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Alexa WebAPI Starter</title>
+        <script src="https://cdn.html.games.alexa.a2z.com/alexa-html/latest/alexa-html.js"></script>
+    </head>
+    <body>
+        <div id="app"></div>
+        <div class="hud scrollable" id="debug-element">Debug</div>
+        <script>var exports = {};</script>
+        <script src="main.js"></script>
+    </body>
+</html>
+<style>
+    .scrollable {
+        overflow-y: auto;
+    }
+    .hud {
+        position: absolute;
+        z-index: 100;
+        display: block;
+    }
+    #debug-element {
+        width: 100%;
+        background-color: rgba(0,0,0,0.05);
+        top: 0%;
+        text-align: left;
+        white-space: pre-wrap;
+    }
+</style>
